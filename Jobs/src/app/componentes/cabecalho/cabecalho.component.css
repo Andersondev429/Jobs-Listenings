@@ -1,0 +1,7 @@
+.cabecalho{
+  background-image: url(../../../assets/images/bg-header-desktop.svg);
+  min-height: 18vh;
+  background-size: cover;
+  background-color: hsl(180, 29%, 50%);
+  margin-bottom: 4%;
+}

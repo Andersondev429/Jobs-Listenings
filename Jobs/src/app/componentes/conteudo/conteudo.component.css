@@ -1,0 +1,107 @@
+.jobs{
+  background-color: hsl(180, 31%, 95%);
+  border: none;
+  box-shadow: 22px 16px 19px -7px rgba(0,0,0,0.1);
+}
+
+.jobs:hover{
+  background-color: hsl(180, 31%, 95%);
+  border: none;
+  box-shadow: 22px 16px 19px -7px hsla(180, 29%, 50%, 0.507);
+}
+
+.img-job{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-job img{
+  width: 40%;
+}
+
+.description-job{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+.description-job h5{
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.subtitle-job{
+  margin-bottom: 1%;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.div-botoes{
+  display: flex;
+}
+
+.botoes{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.botoes button{
+  padding: 1px 2%;
+  border: none;
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  background-color: hsla(180, 74%, 70%, 0.144);
+  font-family: 'Barlow', sans-serif;
+  border-radius: 5px;
+}
+
+.botoes button:hover{
+  padding: 1px 2%;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  background-color: hsl(180, 29%, 50%);
+  font-family: 'Barlow', sans-serif;
+  border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+  .img-job img{
+    width: 60%;
+  }
+
+  .div-botoes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-job img{
+    width: 30%;
+  }
+
+  .description-job{
+    text-align: center;
+  }
+
+  .div-botoes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .botoes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 355px) {
+  .botoes button{
+    margin-top: 10px;
+  }
+}
+
