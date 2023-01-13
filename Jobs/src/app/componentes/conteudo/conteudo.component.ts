@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Conteudo } from './conteudo';
+import { ConteudoService } from './conteudo.service';
 
 @Component({
   selector: 'app-conteudo',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConteudoComponent implements OnInit {
 
-  constructor() { }
+  jobs =[    {
+    company: "",
+    logo: "",
+    new: true,
+    featured: true,
+    position: "",
+    role: "",
+    level: "",
+    postedAt: "",
+    contract: "",
+    location: "",
+    languages: [],
+    tools: []
+  }];
 
-  ngOnInit(): void {
+
+
+  constructor(private service: ConteudoService) { }
+
+  ngOnInit(): void{
+    this.service.listar().subscribe((Jobs) => {this.jobs = Jobs})
   }
-
 }

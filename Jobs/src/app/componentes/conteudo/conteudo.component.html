@@ -1,25 +1,28 @@
 <div class="container">
-  <div class="card mb-3 jobs">
+  <div class="card mb-3 jobs" *ngFor="let job of jobs">
     <div class="row g-0">
       <div class="col-md-2 img-job">
-        <img src="../../../assets/images/account.svg" class="img-fluid rounded-start" alt="...">
+        <img src="{{ job.logo }}" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-5 jobs-text">
         <div class="card-body description-job">
-          <h5 class="card-title">Photosnap</h5>
-          <p class="card-text subtitle-job">Senior Frontend Developer</p>
-          <p class="card-text"><small class="text-muted">1d ago - Full Time - USA only</small></p>
+          <h5 class="card-title">{{ job.company }}</h5>
+          <p class="card-text subtitle-job">{{ job.position }}</p>
+          <p class="card-text"><small class="text-muted">{{ job.postedAt }} - {{ job.contract }} - {{ job.location }}</small></p>
         </div>
       </div>
       <div class="col-md-5 div-botoes">
         <div class="card-body botoes">
-          <button>Frontend</button>
-          <button>Senior</button>
-          <button>HTML</button>
-          <button>CSS</button>
-          <button>Javascript</button>
+          <button>{{ job.role }}</button>
+          <button>{{ job.level }}</button>
+          <button *ngIf="job.languages[0], else semConteudo">{{ job.languages[0] }}</button>
+          <button *ngIf="job.languages[1], else semConteudo">{{ job.languages[1] }}</button>
+          <button *ngIf="job.languages[2], else semConteudo">{{ job.languages[2] }}</button>
+          <button *ngIf="job.tools[0], else semConteudo">{{ job.tools[0] }}</button>
+          <button *ngIf="job.tools[1], else semConteudo">{{ job.tools[1] }}</button>
         </div>
       </div>
+      <ng-template #semConteudo></ng-template>
     </div>
   </div>
 </div>
