@@ -32,6 +32,28 @@
   font-size: 15px;
 }
 
+.button-new{
+  border: none;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2px 8px 2px 8px;
+  background-color: hsl(180, 29%, 50%);
+  color: #ffffffef;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.button-featured{
+  border: none;
+  padding: 2px 8px 2px 8px;
+  background-color: black;
+  color: #ffffffef;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
 .subtitle-job{
   margin-bottom: 1%;
   font-weight: 700;

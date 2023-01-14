@@ -1,0 +1,73 @@
+.filter-jobs{
+  background-color: hsl(180, 31%, 95%);
+  border: none;
+  box-shadow: 22px 16px 19px -7px rgba(0,0,0,0.1);
+  min-height: 50px;
+}
+
+.filter-buttons{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.div-jobs{
+  padding-left: 6%;
+  padding-left: 6%;
+}
+
+.button-jobs{
+  padding: 1px 4px;
+  border: none;
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  background-color: hsla(180, 74%, 70%, 0.144);
+  font-family: 'Barlow', sans-serif;
+  border-radius: 5px;
+}
+
+.button-remove{
+  border: none;
+  background-color: hsl(180, 29%, 50%);
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 0px 5px 5px 0px;
+  margin-right: 15px;
+}
+
+.button-remove:hover{
+  border: none;
+  background-color: black;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 0px 5px 5px 0px;
+  margin-right: 15px;
+}
+
+.img-remove{
+  margin-bottom: 3px;
+  width: 85%;
+}
+
+.button-clear{
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+}
+
+.button-clear button{
+  border: none;
+  background-color: transparent;
+  color: hsl(180, 29%, 50%);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.button-clear button:hover{
+  border: none;
+  background-color: transparent;
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+}

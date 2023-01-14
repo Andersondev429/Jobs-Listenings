@@ -7,12 +7,14 @@ import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component'
 import { ConteudoComponent } from './componentes/conteudo/conteudo.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FiltroComponent } from './componentes/filtro/filtro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
-    ConteudoComponent
+    ConteudoComponent,
+    FiltroComponent
   ],
   imports: [
     BrowserModule,

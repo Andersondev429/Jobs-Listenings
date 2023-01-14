@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Conteudo } from './conteudo';
 import { ConteudoService } from './conteudo.service';
+import { FiltroComponent, Filtros } from '../filtro/filtro.component';
 
 @Component({
   selector: 'app-conteudo',
@@ -9,7 +10,7 @@ import { ConteudoService } from './conteudo.service';
 })
 export class ConteudoComponent implements OnInit {
 
-  jobs =[    {
+  @Input() jobs =[    {
     company: "",
     logo: "",
     new: true,
@@ -31,4 +32,8 @@ export class ConteudoComponent implements OnInit {
   ngOnInit(): void{
     this.service.listar().subscribe((Jobs) => {this.jobs = Jobs})
   }
+
+//  adicionarFiltros(){
+//    console.log(FiltroComponent.filtros)
+//  }
 }
