@@ -8,7 +8,8 @@
         <div class="card-body description-job">
           <h5 class="card-title">{{ job.company }}
           <button class="button-new" *ngIf="job.new == true, else semConteudo">NEW!</button>
-          <button class="button-featured" *ngIf="job.featured == true, else semConteudo">FEATURED</button></h5>
+          <button class="button-featured" *ngIf="job.featured == true, else semConteudo">FEATURED</button>
+          </h5>
           <p class="card-text subtitle-job">{{ job.position }}</p>
           <p class="card-text"><small class="text-muted">{{ job.postedAt }} - {{ job.contract }} - {{ job.location }}</small></p>
         </div>

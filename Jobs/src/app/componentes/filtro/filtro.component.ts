@@ -9,12 +9,28 @@ export { Filtros };
 })
 export class FiltroComponent implements OnInit {
   filtros: Filtros = {
-    filtro: ['text', 'text1', 'text2'],
+    filtro: ['Frontend', 'Senior', 'HTML'],
   };
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  limparFiltro(){
+    this.filtros.filtro.length = 0;
+  }
+
+  limparSelecaoPosicao0(){
+    this.filtros.filtro.splice(0, 1);
+  }
+
+  limparSelecaoPosicao1(){
+    this.filtros.filtro.splice(1, 1);
+  }
+
+  limparSelecaoPosicao2(){
+    this.filtros.filtro.splice(2, 1);
   }
 }
 
