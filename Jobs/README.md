@@ -1,27 +1,36 @@
-# Jobs
+# Frontend Mentor - Job listings with filtering
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
+Jobs - src - assets - images - desktop-preview.jpg
 
-## Development server
+## Welcome! 👋
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Thanks for checking out this front-end coding challenge.
 
-## Code scaffolding
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
 
-## Build
+## The challenge
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Your challenge is to build out this job listing page and get it looking as close to the design as possible.
 
-## Running unit tests
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Your users should be able to:
 
-## Running end-to-end tests
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Filter job listings based on the categories
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Deploying your project
 
-## Further help
+As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [GitHub Pages](https://github.com/Andersondev429/Jobs-Listenings)
+
+## Feedback
+
+I'm very proud, because I managed to use the directives, interpolations and other.
+The biggest difficulty of this project was the communication between sibling components.
+
+## Thanks
